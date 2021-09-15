@@ -1,0 +1,3 @@
+#!/bin/sh
+read file
+nohup python $file &

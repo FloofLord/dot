@@ -1,0 +1,4 @@
+#!/bin/sh
+mkdir $(isosec)
+cd $(ls -t | head -1)
+vim README.md

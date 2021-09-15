@@ -1,0 +1,5 @@
+#!/bin/sh
+str=$(cat README.md | head -1)
+commit_message=${str:1}
+git add .
+git commit -m"${commit_message}" 

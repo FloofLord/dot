@@ -1,0 +1,10 @@
+#!/bin/bash
+
+
+for name in $(kubectl get pods -o custom-columns=NAME:metadata.name)
+do
+	if [$name != 'NAME'];
+	then
+		echo $name
+	fi
+done
