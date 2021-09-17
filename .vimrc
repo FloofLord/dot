@@ -1,5 +1,10 @@
 set mouse=a
 set mouse=n
+set mouse+=a
+if &term =~ '^screen'
+	    " tmux knows the extended mouse mode
+			set ttymouse=xterm2
+endif
 call plug#begin('~/.vim/autoload')
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'flazz/vim-colorschemes'
