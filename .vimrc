@@ -2,7 +2,6 @@ set mouse=a
 set mouse=n
 set mouse+=a
 
-#Allow mouse movement in vim while using tmux
 if &term =~ '^screen'
 	    " tmux knows the extended mouse mode
 			set ttymouse=xterm2
